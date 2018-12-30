@@ -1,0 +1,40 @@
+body {
+    background-color: #020202;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+/* Home Page */
+#name {
+    margin: 2% 0%;
+    color: #66FCF1;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 5em;
+}
+
+#home-page {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 48%;
+
+    h2 {
+        color: #C5C6C7;
+        font-weight: 300;
+        font-size: 3.3em
+    }
+
+    button {
+        margin: 3% 0%;
+        color: #66FCF1;
+        background-color: transparent;
+        background-image: none;
+        border-color: #66FCF1;
+        border-radius: 0%;
+        border: 2px solid;
+        font-size: 1.5em;
+        font-weight: 100;
+
+    }
+}
