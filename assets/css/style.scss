@@ -25,7 +25,7 @@ body {
         font-size: 3.3em
     }
 
-    button {
+    a {
         margin: 3% 0%;
         color: #66FCF1;
         background-color: transparent;
@@ -35,6 +35,38 @@ body {
         border: 2px solid;
         font-size: 1.5em;
         font-weight: 100;
+        font-family: 'Montserrat';
+    }
 
+    a:hover {
+        color: #000000;
+        background-color: #66FCF1;
+        border-color: #66FCF1;
+        font-weight: 700
+    }
+
+    a:focus,
+    a.focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+
+    a.disabled,
+    a:disabled {
+        color: #66FCF1;
+        background-color: transparent;
+    }
+
+    a:not(:disabled):not(.disabled):active,
+    a:not(:disabled):not(.disabled).active,
+    .show>a.dropdown-toggle {
+        color: #000000;
+        background-color: #66FCF1;
+        border-color: #66FCF1;
+    }
+
+    a:not(:disabled):not(.disabled):active:focus,
+    a:not(:disabled):not(.disabled).active:focus,
+    .show>a.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
     }
 }

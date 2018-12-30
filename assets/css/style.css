@@ -25,7 +25,7 @@ body {
   font-size: 3.3em;
 }
 
-#home-page button {
+#home-page a {
   margin: 3% 0%;
   color: #66FCF1;
   background-color: transparent;
@@ -35,5 +35,40 @@ body {
   border: 2px solid;
   font-size: 1.5em;
   font-weight: 100;
+  font-family: 'Montserrat';
+}
+
+#home-page a:hover {
+  color: #000000;
+  background-color: #66FCF1;
+  border-color: #66FCF1;
+  font-weight: 700;
+}
+
+#home-page a:focus,
+#home-page a.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+#home-page a.disabled,
+#home-page a:disabled {
+  color: #66FCF1;
+  background-color: transparent;
+}
+
+#home-page a:not(:disabled):not(.disabled):active,
+#home-page a:not(:disabled):not(.disabled).active,
+#home-page .show > a.dropdown-toggle {
+  color: #000000;
+  background-color: #66FCF1;
+  border-color: #66FCF1;
+}
+
+#home-page a:not(:disabled):not(.disabled):active:focus,
+#home-page a:not(:disabled):not(.disabled).active:focus,
+#home-page .show > a.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
