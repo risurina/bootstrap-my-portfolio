@@ -1,13 +1,13 @@
 body {
   background-color: #020202;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Home Page */
 #name {
   margin: 2% 0%;
-  color: #66FCF1;
-  font-family: 'Montserrat', sans-serif;
+  color: #66fcf1;
+  font-family: "Montserrat", sans-serif;
   font-size: 5em;
 }
 
@@ -20,55 +20,77 @@ body {
 }
 
 #home-page h2 {
-  color: #C5C6C7;
+  color: #c5c6c7;
   font-weight: 300;
   font-size: 3.3em;
 }
 
-#home-page a {
+a.main-btn {
   margin: 3% 0%;
-  color: #66FCF1;
+  color: #66fcf1;
   background-color: transparent;
   background-image: none;
-  border-color: #66FCF1;
+  border-color: #66fcf1;
   border-radius: 0%;
   border: 2px solid;
   font-size: 1.5em;
   font-weight: 100;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
-#home-page a:hover {
+a.main-btn :hover {
   color: #000000;
-  background-color: #66FCF1;
-  border-color: #66FCF1;
+  background-color: #66fcf1;
+  border-color: #66fcf1;
   font-weight: 700;
 }
 
-#home-page a:focus,
-#home-page a.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+a.main-btn :focus,
+a.main-btn .focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #66fcf1;
+          box-shadow: 0 0 0 0.2rem #66fcf1;
 }
 
-#home-page a.disabled,
-#home-page a:disabled {
-  color: #66FCF1;
+.main-btn .disabled,
+.main-btn :disabled {
+  color: #66fcf1;
   background-color: transparent;
 }
 
-#home-page a:not(:disabled):not(.disabled):active,
-#home-page a:not(:disabled):not(.disabled).active,
-#home-page .show > a.dropdown-toggle {
+.main-btn :not(:disabled):not(.disabled):active,
+.main-btn :not(:disabled):not(.disabled).active,
+.show > .main-btn .dropdown-toggle {
   color: #000000;
-  background-color: #66FCF1;
-  border-color: #66FCF1;
+  background-color: #66fcf1;
+  border-color: #66fcf1;
 }
 
-#home-page a:not(:disabled):not(.disabled):active:focus,
-#home-page a:not(:disabled):not(.disabled).active:focus,
-#home-page .show > a.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+.main-btn :not(:disabled):not(.disabled):active:focus,
+.main-btn :not(:disabled):not(.disabled).active:focus,
+.show > .main-btn .dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #66fcf1;
+          box-shadow: 0 0 0 0.2rem #66fcf1;
+}
+
+/** InProgress Page */
+#in-progress-page {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 48%;
+}
+
+#in-progress-page .title {
+  margin: 2% 0%;
+  color: #66fcf1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6em;
+}
+
+#in-progress-page h2 {
+  color: #c5c6c7;
+  font-weight: 300;
+  font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */

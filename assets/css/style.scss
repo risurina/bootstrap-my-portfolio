@@ -1,15 +1,19 @@
+$colors: (primary: #66fcf1);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
 body {
     background-color: #020202;
-    font-family: 'Roboto',
-        sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Home Page */
 #name {
     margin: 2% 0%;
-    color: #66FCF1;
-    font-family: 'Montserrat',
-        sans-serif;
+    color: color(primary);
+    font-family: "Montserrat", sans-serif;
     font-size: 5em;
 }
 
@@ -20,53 +24,74 @@ body {
     top: 48%;
 
     h2 {
-        color: #C5C6C7;
+        color: #c5c6c7;
         font-weight: 300;
-        font-size: 3.3em
+        font-size: 3.3em;
+    }
+}
+
+a.main-btn {
+    margin: 3% 0%;
+    color: color(primary);
+    background-color: transparent;
+    background-image: none;
+    border-color: color(primary);
+    border-radius: 0%;
+    border: 2px solid;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Montserrat";
+}
+
+a.main-btn :hover {
+    color: #000000;
+    background-color: color(primary);
+    border-color: color(primary);
+    font-weight: 700;
+}
+
+a.main-btn :focus,
+a.main-btn .focus {
+    box-shadow: 0 0 0 0.2rem color(primary);
+}
+
+.main-btn .disabled,
+.main-btn :disabled {
+    color: color(primary);
+    background-color: transparent;
+}
+
+.main-btn :not(:disabled):not(.disabled):active,
+.main-btn :not(:disabled):not(.disabled).active,
+.show>.main-btn .dropdown-toggle {
+    color: #000000;
+    background-color: color(primary);
+    border-color: color(primary);
+}
+
+.main-btn :not(:disabled):not(.disabled):active:focus,
+.main-btn :not(:disabled):not(.disabled).active:focus,
+.show>.main-btn .dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem color(primary);
+}
+
+/** InProgress Page */
+#in-progress-page {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 48%;
+
+    .title {
+        margin: 2% 0%;
+        color: color(primary);
+        font-family: "Montserrat", sans-serif;
+        font-size: 6em;
     }
 
-    a {
-        margin: 3% 0%;
-        color: #66FCF1;
-        background-color: transparent;
-        background-image: none;
-        border-color: #66FCF1;
-        border-radius: 0%;
-        border: 2px solid;
-        font-size: 1.5em;
-        font-weight: 100;
-        font-family: 'Montserrat';
-    }
-
-    a:hover {
-        color: #000000;
-        background-color: #66FCF1;
-        border-color: #66FCF1;
-        font-weight: 700
-    }
-
-    a:focus,
-    a.focus {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-    }
-
-    a.disabled,
-    a:disabled {
-        color: #66FCF1;
-        background-color: transparent;
-    }
-
-    a:not(:disabled):not(.disabled):active,
-    a:not(:disabled):not(.disabled).active,
-    .show>a.dropdown-toggle {
-        color: #000000;
-        background-color: #66FCF1;
-        border-color: #66FCF1;
-    }
-
-    a:not(:disabled):not(.disabled):active:focus,
-    a:not(:disabled):not(.disabled).active:focus,
-    .show>a.dropdown-toggle:focus {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    h2 {
+        color: #c5c6c7;
+        font-weight: 300;
+        font-size: 2em;
     }
 }
