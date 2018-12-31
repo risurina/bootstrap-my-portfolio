@@ -55,7 +55,8 @@
 
         /* Change META Tag */
         let hostname = window.location.hostname
-        let meta_image_url = `${hostname}/assets/images/screenshot/main_page.png`
+        let protocol = window.location.protocol
+        let meta_image_url = `${protocol}//${hostname}/assets/images/screenshot/main_page.png`
         $("meta[property='og:image']").attr('content', meta_image_url);
     </script>>
 </body>
