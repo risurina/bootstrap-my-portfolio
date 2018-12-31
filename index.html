@@ -52,6 +52,11 @@
     <script>
         particlesJS.load('particles-js', 'assets/plugins/particles.js/particles.json');
         particlesJS.load('particles-js', 'assets/plugins/particles.js/particles.json');
+
+        /* Change META Tag */
+        let hostname = window.location.hostname
+        let meta_image_url = `${hostname}/assets/images/screenshot/main_page.png`
+        $("meta[property='og:image']").attr('content', meta_image_url);
     </script>>
 </body>
 
