@@ -12,6 +12,8 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
 
     <!--  Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -75,17 +77,35 @@
 
     <!-- Content -->
     <div class="content">
-        <div class="container-fluid text-center">
-            <div id="particles-js">
-                <div id="in-progress-page">
-                    <h1 class="text-uppercase title">In<br>Progress</h1>
-                    <h2>This page is under construction.</h2>
-                    <a class="btn main-btn" href="/index.html">BACK TO HOME PAGE</a>
+        <div class="container-fluid text-white">
+            <div class="row" id="particles-js">
+                <div class="col">
+                    <div class="card bg-transparent">
+                        <div class="card-body">
+                            <h2 class="card-title">ABOUT</h2>
+                            <p class="card-text">
+                                <i>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent">
+                        <div class="card-body">
+                            <h2 class="card-title">SKILLS</h2>
+                            <p class="card-text" id="skills">
+
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Content -->
+    </div> <!-- End Content -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -98,13 +118,45 @@
 
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
     <script src="//threejs.org/examples/js/libs/stats.min.js"></script>
 
     <script>
         particlesJS.load('particles-js', 'assets/plugins/particles.js/particles.json');
-        particlesJS.load('particles-js', 'assets/plugins/particles.js/particles.json');
-    </script>>
+    </script>
+
+    <script>
+        var skills = [{
+                skill: 'PHP',
+                percentage: 75
+            },
+            {
+                skill: 'LARAVEL',
+                percentage: 75
+            },
+            {
+                skill: 'VUEJS',
+                percentage: 60
+            }
+        ];
+
+        let skillsHtml = ""
+        $.each(skills, function (k, v) {
+            skillsHtml +=
+                `<div class="skill">
+                    <label>${v.skill}</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: ${v.percentage}%;" aria-valuenow="${v.percentage}"
+                            aria-valuemin="0"
+                            aria-valuemax="100">
+                            ${v.percentage}%</div>
+                    </div>
+                </div>`
+        });
+
+        $('#skills').html(skillsHtml)
+    </script>
 </body>
 
 </html>

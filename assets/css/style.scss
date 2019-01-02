@@ -1,4 +1,4 @@
-$colors: (primary: #66fcf1, dark: #020202);
+$colors: (primary: #66fcf1, primary-dark: #45A29E, dark: #020202);
 
 @function color($color-name) {
     @return map-get($colors, $color-name);
@@ -154,9 +154,28 @@ a.main-btn .focus {
         }
     }
 
-    .content {
+    .content .container-fluid {
+        margin-top: 2.5em;
         margin-left: 350px;
-        padding: 0px 10px;
+        width: calc(100% - 350px);
+        font-family: 'Raleway',
+            sans-serif;
     }
 
+    .skill {
+        label {
+            font-size: 0.8em;
+            margin: 8px 0px 0px 0px;
+        }
+
+        .progress {
+            height: 1.2em;
+            border-radius: 0%;
+            background-color: color(primary);
+        }
+
+        .progress-bar {
+            background-color: color(primary-dark)
+        }
+    }
 }

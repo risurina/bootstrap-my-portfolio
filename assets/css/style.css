@@ -145,9 +145,23 @@ a.main-btn .focus {
     right: 0px;
     bottom: 1.5em;
   }
-  .content {
+  .content .container-fluid {
+    margin-top: 2.5em;
     margin-left: 350px;
-    padding: 0px 10px;
+    width: calc(100% - 350px);
+    font-family: 'Raleway', sans-serif;
+  }
+  .skill label {
+    font-size: 0.8em;
+    margin: 8px 0px 0px 0px;
+  }
+  .skill .progress {
+    height: 1.2em;
+    border-radius: 0%;
+    background-color: #66fcf1;
+  }
+  .skill .progress-bar {
+    background-color: #45A29E;
   }
 }
 /*# sourceMappingURL=style.css.map */
