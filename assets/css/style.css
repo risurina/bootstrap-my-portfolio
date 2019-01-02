@@ -212,6 +212,11 @@ ul.timeline .date {
   font-weight: 700;
 }
 
+ul.timeline .technology {
+  position: absolute;
+  bottom: 0px;
+}
+
 ul.timeline .technology-title {
   font-size: 0.8em;
 }
@@ -228,5 +233,11 @@ ul.timeline .tag {
   margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+}
+
+ul.timeline .img-thumbnail {
+  background-color: #66fcf1;
+  border: 0px;
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */
