@@ -93,4 +93,61 @@ a.main-btn .focus {
   font-weight: 300;
   font-size: 2em;
 }
+
+/** Nav Side */
+@media only screen and (min-width: 992px) {
+  .navbar {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: block;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar .navbar-nav {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .nav-link {
+    font-size: 1.1em;
+  }
+  .navbar .nav-link.dark {
+    color: #020202;
+  }
+  .navbar .nav-link.dark.icon {
+    font-size: 1.5em;
+    padding: 10%;
+  }
+  .navbar .nav-item.active {
+    font-weight: 700;
+  }
+  .navbar .nav-img img {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    border: #000000 solid .5em;
+    margin: 2em 0em;
+  }
+  .navbar .collapse.navbar-collapse {
+    margin-top: -15px;
+  }
+  .navbar .container.icon {
+    position: absolute;
+    right: 0px;
+    bottom: 1.5em;
+  }
+  .content {
+    margin-left: 350px;
+    padding: 0px 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
