@@ -132,6 +132,7 @@ a.main-btn .focus {
         }
 
         .nav-item.active {
+            font-size: 1.2em;
             font-weight: 700;
         }
 
@@ -254,4 +255,41 @@ ul.timeline .img-thumbnail {
     background-color: color(primary);
     border: 0px;
     border-radius: 0;
+}
+
+/* Contract */
+#contract {
+    .form-group {
+        padding: 0.7em 0em;
+    }
+
+    .form-control {
+        border-radius: 0px;
+        border: 0px;
+        color: #020202;
+        font-size: 1em;
+    }
+
+    .input-group {
+        border-radius: 0px;
+    }
+
+    .input-group-text {
+        border-radius: 0px;
+        background-color: color(primary);
+        border: 1px solid color(primary);
+        color: black;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .btn {
+        border-radius: 0;
+        background-color: color(primary);
+        border: 0px;
+        color: #020202;
+        font-weight: 500;
+    }
 }
