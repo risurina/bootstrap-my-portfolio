@@ -89,68 +89,32 @@
     <!-- End Side Nav-->
 
     <!-- Content -->
-    <div class="content">
+    <div class="content" id="app">
         <div class="container-fluid text-white">
             <div class="row">
                 <div class="col">
                     <div class="card bg-transparent">
                         <div class="card-body">
-                            <h2 class="card-title">EXPERIENCE</h2>
+                            <h2 class="card-title">EXPERIENCE :</h2>
                             <ul class="timeline">
-                                <li>
+                                <li v-for="(experience, index) in experiences">
+                                    <a href="#" class="date">{{ experience.date }}</a>
+                                    <br>
                                     <a class="title" href="#">
-                                        BUSINESS POINT LENDING INVESTOR
+                                        {{ experience.position }}
                                     </a>
-                                    <a href="#" class="float-right date">JAN 2018 - JAN 2019</a>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque scelerisque
-                                        diam non nisi semper, et
-                                        elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis
-                                        ligula in sodales vehicula....
-                                    </p>
-
-                                    <span class="technology-title">TECHNOLOGIES :</span>
-                                    <div>
-                                        <span class="tag">PHP</span>
-                                        <span class="tag">PHP</span>
+                                    <h6 class="company">{{ experience.company }}</h6>
+                                    <div class="description">
+                                        <ul>
+                                            <li v-for="role in experience.roles" v-html="role"></li>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li>
-                                    <a class="title" href="#">
-                                        BUSINESS POINT LENDING INVESTOR
-                                    </a>
-                                    <a href="#" class="float-right date">JAN 2018 - JAN 2019</a>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque scelerisque
-                                        diam non nisi semper, et
-                                        elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis
-                                        ligula in sodales vehicula....
-                                    </p>
 
-                                    <span class="technology-title">TECHNOLOGIES :</span>
+                                    <span class="technology-title" v-if="experience.technologies">TECHNOLOGIES :</span>
                                     <div>
-                                        <span class="tag">PHP</span>
-                                        <span class="tag">PHP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="title" href="#">
-                                        BUSINESS POINT LENDING INVESTOR
-                                    </a>
-                                    <a href="#" class="float-right date">JAN 2018 - JAN 2019</a>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque scelerisque
-                                        diam non nisi semper, et
-                                        elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis
-                                        ligula in sodales vehicula....
-                                    </p>
-
-                                    <div class="technology">
-                                        <span class="technology-title">TECHNOLOGIES :</span>
-                                        <div>
-                                            <span class="tag">PHP</span>
-                                            <span class="tag">PHP</span>
-                                        </div>
+                                        <span class="tag" v-for="technology in experience.technologies">
+                                            {{ technology }}
+                                        </span>
                                     </div>
                                 </li>
                             </ul>
@@ -163,24 +127,33 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="//threejs.org/examples/js/libs/stats.min.js"></script>
 
-    <script>
-        particlesJS.load('particles-js', 'assets/plugins/particles.js/particles.json');
-    </script>
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script>
+        var vm = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    experiences: []
+                }
+            },
+            mounted() {
+                axios.get("assets/json-data/experience.json").then(response => {
+                    this.experiences = response.data
+                });
+            },
+        })
     </script>
 </body>
 

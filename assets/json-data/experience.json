@@ -1,0 +1,49 @@
+[{
+        "date": "SEPTEMBER 2018 - PRESENT ",
+        "position": "FULL STACK WEB DEVELOPER",
+        "company": "SWIFT FOX IT ",
+        "roles": [
+            "I working as remote developer.",
+            "Develop API base web application using Laravel Technology.",
+            "Develop front-end or client web application to access data from API using VueJS."
+        ]
+    },
+    {
+        "date": "MARCH 2018 - JULY 2018",
+        "position": "PHP\\ LARAVEL DEVELOPER",
+        "company": "GETFIFO - LONDON, UNITED KINGDOM.",
+        "roles": [
+            "I worked as remote and part - time developer.",
+            "Setup Two Factor Authentication.",
+            "Setup email sevices.",
+            "Programmed client - side functionality.",
+            "<a href='www.getfifo.io'>www.getfifo.io</a>"
+        ]
+    },
+    {
+        "date": "SEPTEMBER 2015 - APRIL 2018",
+        "position": "IT ADMINISTRATOR \\ FULL - STACK WEB DEVELOPER",
+        "company": "BUSINESS POINT LENDING INVESTOR CORP.",
+        "roles": [
+            "I was responsible for managing and maintaining WINDOWS SERVER 2008 r2.",
+
+            "Install and configuring appropriate software according to specification.",
+            "Provide guidance to end - user.",
+            "Maintain local network and file and printer sharing.",
+            "Perform troubleshooting.",
+            "Managing database."
+        ]
+    },
+    {
+        "date": "JANUARY 2015 - SEPTEMBER 2015",
+        "position": "IT ASSISTANT",
+        "company": "BUSINESS POINT LENDING INVESTOR CORP.",
+        "roles": [
+            "Installing and managing Windows Server.",
+            "Installing and managing end - user computer hardware, Operating System and software.",
+            "Provide guidance to the end - user.",
+            "Maintain local network and file and printer sharing.",
+            "Perform troubleshooting."
+        ]
+    }
+]
