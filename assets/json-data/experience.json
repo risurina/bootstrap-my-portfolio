@@ -3,9 +3,10 @@
         "position": "FULL STACK WEB DEVELOPER",
         "company": "SWIFT FOX IT ",
         "roles": [
-            "I working as remote developer.",
-            "Develop API base web application using Laravel Technology.",
-            "Develop front-end or client web application to access data from API using VueJS."
+            "Working as remote developer.",
+            "Developing API base web application using <strong>Laravel</strong> framework.",
+            "Developing front-end or client web application to access data from API using <strong>VueJS</strong>.",
+            "Developing hybrid modile rest client application using <strong>Vue and Cordova</strong>"
         ]
     },
     {
@@ -25,13 +26,28 @@
         "position": "IT ADMINISTRATOR \\ FULL - STACK WEB DEVELOPER",
         "company": "BUSINESS POINT LENDING INVESTOR CORP.",
         "roles": [
-            "I was responsible for managing and maintaining WINDOWS SERVER 2008 r2.",
-
+            "Managed and maintained WINDOWS SERVER 2008 r2.",
+            "Performed workstation and server troubleshooting.",
+            "Maintained local network, file and printer sharing.",
             "Install and configuring appropriate software according to specification.",
-            "Provide guidance to end - user.",
-            "Maintain local network and file and printer sharing.",
-            "Perform troubleshooting.",
-            "Managing database."
+            "Provided support to end-user.",
+
+            "",
+
+            "Maintained and enhanced legacy system (<i>Lending Management System</i>) programmed in <strong>VB6.</strong>",
+            "Maintained database (MSSQL Server).",
+
+            "",
+
+            "<strong>Develop In-House Operation Management System</strong>",
+            [
+                "Modules : User Role, Project Management, Bill Of Materials, Purchase Order, and Request for Payment, Cash Advance, Check Creation, Petty Cash, and Payroll. ",
+                "Analyze business logic and process.",
+                "Designed datatable.",
+                "Implement using Web Technology (<strong>PHP, Bootstrap, Juery, AJAX and MS Sql</strong>)",
+                "Maintained and enhanced content.",
+                "Started upgrading the system into a web framework (<strong>Laravel and Vue</strong>)."
+            ]
         ]
     },
     {
@@ -39,11 +55,11 @@
         "position": "IT ASSISTANT",
         "company": "BUSINESS POINT LENDING INVESTOR CORP.",
         "roles": [
-            "Installing and managing Windows Server.",
-            "Installing and managing end - user computer hardware, Operating System and software.",
-            "Provide guidance to the end - user.",
-            "Maintain local network and file and printer sharing.",
-            "Perform troubleshooting."
+            "Installed and managed Windows Server.",
+            "Installed and managed end-user workstation.",
+            "Provided support to the end-user.",
+            "Maintained local network, file, printer sharing.",
+            "Performed workstation and server troubleshooting."
         ]
     }
 ]

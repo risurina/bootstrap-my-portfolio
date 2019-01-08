@@ -104,9 +104,16 @@
                                         {{ experience.position }}
                                     </a>
                                     <h6 class="company">{{ experience.company }}</h6>
-                                    <div class="description">
+                                    <div class="roles">
                                         <ul>
-                                            <li v-for="role in experience.roles" v-html="role"></li>
+                                            <li v-for="role in experience.roles" :class="{ 'separator': !role, 'sub-role': role instanceof Array}">
+                                                <span v-if="role instanceof Array">
+                                                    <ul>
+                                                        <li v-for="sub_role in role" v-html="sub_role"></li>
+                                                    </ul>
+                                                </span>
+                                                <span v-html="role" v-else></span>
+                                            </li>
                                         </ul>
                                     </div>
 

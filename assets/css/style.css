@@ -219,6 +219,15 @@ ul.timeline .date {
   font-weight: 700;
 }
 
+ul.timeline .roles ul > li.separator {
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul.timeline .roles ul > li.sub-role {
+  list-style-type: none;
+}
+
 ul.timeline .technology {
   position: absolute;
   bottom: 0px;
